@@ -3,6 +3,9 @@ Code accompanying article (in review - to be published).
 
 This repository contains Gromacs input files and a python script to perform pressure ramp molecular dynamics simulation of a decane droplet.
 
+<p align="center">
+   <img src="assets/droplets_snaps.png" alt="drawing" width="400"/>
+</p>
 
 ## Requirements
 - Gromacs must be installed and loaded/sourced into the sell, or shell script. \
