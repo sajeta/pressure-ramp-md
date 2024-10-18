@@ -1,0 +1,35 @@
+;
+;	File 'topol.top' was generated
+;	By user: unknown (1013398)
+;	On host: trlin
+;	At date: Mon Jan 20 14:50:42 2020
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2019.4 (-:
+;	
+;	Executable:   /net/opt/gromacs/single/buster/AVX2_256/2019.4/GPU/bin/gmx
+;	Data prefix:  /net/opt/gromacs/single/buster/AVX2_256/2019.4/GPU
+;	Working dir:  /net/scratch-tron/ploche/decane/opls/equilibration
+;	Command line:
+;	  gmx pdb2gmx -f out.gro
+;	Force field was read from the standard GROMACS share directory.
+;
+
+; Include forcefield parameters
+#include "charmm36-feb2021.ff/forcefield.itp"
+#include "charmm36-feb2021.ff/tip4p_2005.itp"
+
+; Include decane topology
+#include "decane.itp"
+
+
+[ system ]
+; Name
+decane-water
+
+[ molecules ]
+; Compound        #mols
+DEC                245
+SOL                133480
