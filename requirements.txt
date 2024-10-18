@@ -1,0 +1,9 @@
+numpy
+matplotlib
+pandas
+scipy
+scikit-learn
+panedr
+MDAnalysis
+mdtraj
+numba
