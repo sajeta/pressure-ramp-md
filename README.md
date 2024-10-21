@@ -51,7 +51,7 @@ The config file is required and used to control how the pressure ramping behaves
 - P_START: The pressure (in units of bar) at which the pressure ramp simulations starts. \
   Starting from p = 0 is typically a waste of computational resources as nothing interesting happens before the pressure reaches values close to the cavitation pressure. \
   Recommended to set this parameter 50 to 100 bar less than the expected cavitation pressure.
-- dt: MD time step in units of ns. Typical value is 2 fs (i.e. df = 2 * 10**(-6)) 
+- dt: MD time step in units of ns. Typical value is 2 fs, i.e. df = 2 * 10**(-6)
 
 
 ### Gromacs input files
