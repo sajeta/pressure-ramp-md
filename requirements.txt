@@ -7,3 +7,4 @@ panedr
 MDAnalysis
 mdtraj
 numba
+more-itertools
