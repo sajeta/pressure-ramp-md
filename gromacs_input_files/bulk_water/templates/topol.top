@@ -1,0 +1,10 @@
+#include "charmm36-feb2021.ff/forcefield.itp"
+#include "charmm36-feb2021.ff/tip4p_2005.itp"
+
+[ system ]
+; Name
+water
+
+[ molecules ]
+; Compound        #mols
+SOL             24200

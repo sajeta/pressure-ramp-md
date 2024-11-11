@@ -1,0 +1,63 @@
+; Running
+integrator               = md 
+nsteps                   = 50000    ; run time = dt * nsteps (ns)
+dt                       = 0.002      ; 2 fs (femtoseconds), standard in md simulations
+
+; Linear: Remove center of mass translation
+comm_mode		 = linear
+
+; comm_grps: group(s) for center of mass motion removal, default is the whole system
+comm_grps		 = system
+
+; frequency to write coordinates to output trajectory file, the last coordinates are always written
+nstxout                  = 100000
+
+; frequency to write velocities to output trajectory, the last velocities are always written 
+nstvout                  = 100000
+
+; frequency to write forces to output trajectory. 
+nstfout                  = 100000
+
+; frequency to write coordinates to xtc trajectory 
+nstxtcout                = 10000
+
+; frequency to write energies to log file, the last energies are always written 
+nstlog                   = 100000
+
+; frequency to write energies to energy file, the last energies are always written, should be a multiple of nstcalcenergy.
+nstenergy                = 100
+
+continuation             = no
+
+constraints              = hbonds 
+
+ns_type                  = grid
+nstlist                  = 10
+coulombtype              = pme
+pme_order                = 4
+
+; distance for the Coulomb cut-off
+rcoulomb                 = 1.2
+
+; distance for the LJ or Buckingham cut-off
+vdwtype         = pme       ; LJ-pme
+rvdw            = 1.2       ; distance for the Van-der-Whaal cut-off
+DispCorr        = no 
+
+; Generate velocities in grompp according to a Maxwell distribution at temperature gen_temp [K], with random seed gen_seed. 
+gen-vel                  = yes
+gen_seed                 = 2374
+gen-temp                 = 300
+tcoupl                   = v-rescale
+tc_grps                  = system
+tau_t                    = 0.1
+ref_t                    = 300
+
+; berendsen - Exponential relaxation pressure coupling with time constant tau_p [ps]
+pcoupl                  = C-rescale              ; Pressure coupling on in NPT
+pcoupltype              = isotropic         ; uniform scaling of x and y box vectors
+tau_p                   = 1.0                   ; time constant, in ps
+ref_p                   = 1.0               ; reference pressure, in bar
+compressibility         = 4.5e-5              ; isothermal compressibility of water, bar^-1
+
+pbc              = xyz
