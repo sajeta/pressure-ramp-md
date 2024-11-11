@@ -1,7 +1,7 @@
 # Pressure ramp molecular dynamics (MD) simulation
 Code accompanying article (in review - to be published).
 
-This repository contains Gromacs input files and a python script to perform pressure ramp molecular dynamics simulation of a decane droplet.
+This repository contains Gromacs input files and a Python script to perform pressure ramp molecular dynamics simulation of a decane droplet.
 
 <p align="center">
    <img src="assets/droplets_snaps.png" alt="drawing" width="400"/>
@@ -12,8 +12,8 @@ This repository contains Gromacs input files and a python script to perform pres
   Any fairly up-to-date version of Gromacs should work. We used Gromacs 2022.1.
 - Python 3.11, or newer, is recommended. \
   It will probably work with slightly older Python versions (e.g., 3.10), but this has not been tested. \
-  Most likely will not work with very old python versions.
-- Required python packages are listed in requirements.txt
+  Most likely will not work with very old Python versions.
+- Required Python packages are listed in requirements.txt
 
 
 ## Running the pressure ramp MD simulations
