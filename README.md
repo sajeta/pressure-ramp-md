@@ -1,5 +1,5 @@
 # Pressure ramp molecular dynamics (MD) simulation
-Code accompanying article (in review - to be published).
+Code accompanying the article [Impact of nanoscopic impurity aggregates on cavitation in water](https://doi.org/10.1016/j.surfin.2025.106243).
 
 This repository contains Gromacs input files and a Python script to perform pressure ramp molecular dynamics simulation of a decane droplet.
 
