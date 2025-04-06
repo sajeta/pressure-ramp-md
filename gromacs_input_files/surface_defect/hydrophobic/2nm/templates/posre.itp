@@ -1,0 +1,4 @@
+[ position_restraints ]
+;  i    funct   fcx        fcy        fcz
+  19    1       300        300        300   ; second atom from OH group
+  28    1      1000       1000       1000   ; tenth (last) atom from OH group

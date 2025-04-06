@@ -1,0 +1,16 @@
+#include "charmm36-feb2021.ff/forcefield.itp"
+#include "charmm36-feb2021.ff/tip4p_2005.itp"
+
+#include "decanol.itp"
+
+#include "posre.itp"
+
+
+[ system ]
+; Name
+SAM_WATER
+
+[ molecules ]
+; Compound		  #mols
+DOL			       1008
+SOL               33158
