@@ -7,6 +7,10 @@ This repository contains Gromacs input files and a Python script to perform pres
    <img src="assets/droplets_snaps.png" alt="drawing" width="400"/>
 </p>
 
+<p align="center">
+   <img src="assets/surfaces.jpg" alt="drawing" width="700"/>
+</p>
+
 ## Requirements
 - Gromacs must be installed and loaded/sourced into the shell, or shell script. \
   Any fairly up-to-date version of Gromacs should work. We used Gromacs 2022.1.
