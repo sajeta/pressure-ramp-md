@@ -4,11 +4,11 @@ Code accompanying the articles [Impact of nanoscopic impurity aggregates on cavi
 This repository contains Gromacs input files and a Python script to perform pressure ramp molecular dynamics simulation of a decane droplet.
 
 <p align="center">
-   <img src="assets/droplets_snaps.png" alt="drawing" width="400"/>
+   <img src="assets/droplets_snaps.png" alt="droplets_snaps" width="400"/>
 </p>
 
 <p align="center">
-   <img src="assets/surfaces.jpg" alt="drawing" width="700"/>
+   <img src="assets/surfaces.jpg" alt="surfaces" width="700"/>
 </p>
 
 ## Requirements
